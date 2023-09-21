@@ -1,4 +1,5 @@
 #include "header.h"
+#include <stdio.h>  
 /**
 * exit_program - Terminate the shell.
 * @info: A structure holding possible arguments. Maintains a consistent function prototype.
@@ -7,7 +8,7 @@
 */
 int exit_program(info_t *info)
 {
-int exit_code;
+int exit_code, err_code, execution_status; // Declare missing variables
 if (info->argv[1]) /* If there is an exit argument */
 {
 exit_code = str_to_int_with_error_handling(info->argv[1]);

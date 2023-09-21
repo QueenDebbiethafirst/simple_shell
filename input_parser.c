@@ -1,4 +1,5 @@
 #include "header.h"
+#include <stdio.h> 
 /**
 * check_command - Checks whether a file is an executable command.
 * @info: The information struct.

@@ -1,4 +1,5 @@
 #include "header.h"
+#include <stdio.h>
 /**
 * get_environment - Retrieves a copy of the "environ" array.
 * @info: A structure holding potential arguments, maintaining a consistent

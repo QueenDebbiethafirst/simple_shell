@@ -1,4 +1,5 @@
 #include "header.h"
+#include <stdio.h>
 /**
 * copy_string - Duplicates a string.
 * @copydest: The destination string for copying.

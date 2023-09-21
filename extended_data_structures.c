@@ -1,4 +1,6 @@
 #include "header.h"
+#include <stdio.h>
+
 /**
 * get_list_length - Calculates the length of a linked list.
 * @listHead: Pointer to the first node of the list.

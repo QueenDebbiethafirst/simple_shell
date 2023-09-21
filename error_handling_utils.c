@@ -1,4 +1,5 @@
 #include "header.h"
+#include <stdio.h>
 /**
 * str_to_int_with_error_handling - Converts a string to an integer.
 * @sc: The string to be converted.

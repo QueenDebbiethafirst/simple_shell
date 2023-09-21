@@ -1,4 +1,5 @@
 #include "header.h"
+#include <stdio.h> 
 /**
 * buffer_input - Buffer linked commands.
 * @info: Parameter structure.

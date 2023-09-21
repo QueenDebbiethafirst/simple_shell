@@ -1,4 +1,5 @@
 #include "header.h"
+#include <stdio.h>
 /**
 * output_error - Prints the given string.
 * @output_str: The string to be displayed.

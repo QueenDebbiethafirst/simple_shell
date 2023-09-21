@@ -1,4 +1,5 @@
 #include "header.h"
+#include <stdio.h>
 /**
 * fetch_history_file - Retrieves the history file.
 * @info: Parameter structure.

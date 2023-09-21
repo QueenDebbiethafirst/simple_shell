@@ -1,4 +1,5 @@
 #include "header.h"
+#include <stdio.h>
 /**
 * insert_node - Inserts a node at the beginning of the list.
 * @hptr: Address of a pointer to the head node.

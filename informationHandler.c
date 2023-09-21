@@ -1,4 +1,5 @@
 #include "header.h"
+#include <stdio.h>
 /**
 * initialize_info_data - Initializes the info_t structure.
 * @info: Address of the structure.

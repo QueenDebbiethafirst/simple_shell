@@ -1,4 +1,5 @@
 #include "header.h"
+#include <stdio.h>
 /**
 * user_history - Presents the history list with each command on a separate line,
 *                accompanied by line numbers that commence at 0.
@@ -28,7 +29,7 @@ return (1);
 temp_char = *equals_sign;
 *equals_sign = '\0';
 ret = remove_element_at_position(&(info->alias),
-locate_element_index(info->alias, element_starts_with(info->alias, alias_str, -1)));
+locate_element_index(info->alias, alias_str));
 *equals_sign = temp_char;
 return (ret);
 }
@@ -62,11 +63,11 @@ char *equals_sign, *alias_start;
 if (node)
 {
 equals_sign = locate_char(node->str, '=');
-for (alias_start = node->str; alias_start <= equals_sign; alias_start++)
+for (alias_start = node->str; alias_start < equals_sign; alias_start++)
 _putchar(*alias_start);
-_putchar('\'');
+_putchar('=');
 _puts(equals_sign + 1);
-_puts("'\n");
+_puts("\n");
 return (0);
 }
 return (1);
