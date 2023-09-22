@@ -169,10 +169,8 @@ int copynum;
 char *dest;
 char *searchstr;
 char findchars;
-struct info_t *info;
 char *buf;
 int *lengthaddr;
-char *buf;
 size_t bufsize;
 char **bufptr;
 size_t size;
@@ -212,29 +210,15 @@ char **av;
 size_t strlen;
 char *str1;
 char *str2;
-char *searchstr;
 char *substr;
 char *combobuf;
-const char *appsrc;
 char *destinationString;
 const char *sourceString;
 char *inputString;
-typedef struct list_t list_t;
-typedef struct info_t {
-char *arg;
-char **argv;
-char *delimiter_string;
-char chr;
-list_t *history;
-list_t *alias;
-int argc;
-char *input_string;
 } info_t;
-typedef struct liststr {
 int num;
 char *str;
 struct liststr *next;
-} liststr_t;
 typedef struct passinfo {
 char *arg;
 char **argv;
@@ -263,8 +247,7 @@ struct list_t *next;
 };
 #define INFO_INIT {NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, 0, 0, 0}
 extern char **environ;
-char *copy_string(char *destinationString, const char *sourceString);
-char *copy_string(char *copydest, const char *appsrc, int copynum);
+char *copy_string(char *destinationString, char *copydest, const char *appsrc, const char *sourceString, int copynum);
 #ifndef HEADER_H
 #define HEADER_H
 #include <stddef.h>
