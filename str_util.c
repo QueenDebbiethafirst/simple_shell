@@ -13,12 +13,12 @@ int calculate_string_length(const char *str)
     int length = 0;
     
     if (!str)
-        return 0;
+        return (0);
     
     while (str[length] != '\0')
         length++;
     
-    return length;
+    return (length);
 }
 
 /**
@@ -40,7 +40,7 @@ int compare_strings(const char *str1, const char *str2)
         str2++;
     }
     
-    return 0;
+    return (0);
 }
 
 /**
@@ -56,10 +56,10 @@ char *starts_with_substring(const char *searchstr, const char *substr)
     while (*substr)
     {
         if (*substr++ != *searchstr++)
-            return NULL;
+            return (NULL);
     }
     
-    return (char *)searchstr;
+    return ((char *)searchstr);
 }
 
 /**
@@ -82,5 +82,5 @@ char *concatenate_strings(char *dest, const char *src)
     
     *dest = '\0';
     
-    return result;
+    return (result);
 }
