@@ -13,7 +13,7 @@ char *initialize_memory(char *memptr, char fillbyte, unsigned int numbytes)
     unsigned int i;
     for (i = 0; i < numbytes; i++)
         memptr[i] = fillbyte;
-    return memptr;
+    return (memptr);
 }
 
 /**
@@ -45,24 +45,24 @@ void free_file(char **strarrptr)
 void *_realloc(void *memblockptr, unsigned int oldsize, unsigned int newsize)
 {
     if (!memblockptr)
-        return malloc(newsize);
+        return (malloc(newsize));
 
     if (!newsize)
     {
         free(memblockptr);
-        return NULL;
+        return (NULL);
     }
 
     if (newsize == oldsize)
-        return memblockptr;
+        return (memblockptr);
 
     char *charptr = malloc(newsize);
     if (!charptr)
-        return NULL;
+        return (NULL);
 
     unsigned int copy_size = oldsize < newsize ? oldsize : newsize;
     memcpy(charptr, memblockptr, copy_size);
     free(memblockptr);
 
-    return charptr;
+    return (charptr);
 }
