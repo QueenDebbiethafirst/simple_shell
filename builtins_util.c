@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 #include "list.h"
 #include "header.h"
 
@@ -33,11 +34,15 @@ int performLogic(int input) {
 }
 
 /* Function to manipulate a string */
-char* manipulateString(const char* str) {
+char* manipulateString(const char* str) 
+{
     int len = strlen(str);
     char* result = malloc(len + 1);
-    for (int i = 0; i < len; i++) {
-        if (str[i] >= 'a' && str[i] <= 'z') {
+    int i;
+for (i = 0; i < len; i++)
+    {
+        if (str[i] >= 'a' && str[i] <= 'z') 
+        {
             result[i] = str[i] - 32;
         } else {
             result[i] = str[i];
@@ -56,17 +61,21 @@ void fixCode() {
     if (!validateInput(input)) {
         return;
     }
-
-    char* str1 = "Hello";
-    char* str2 = "World";
-    char* concatenated = concatenateStrings(str1, str2);
+    char* str1;
+    str1 = "Hello";
+    char* str2;
+    str2 = "World";
+    char* concatenated 
+    concatenated = concatenateStrings(str1, str2);
     printf("Concatenated string: %s\n", concatenated);
     free(concatenated);
 
-    int result = performLogic(input);
+    int result;
+    result = performLogic(input);
     printf("Result: %d\n", result);
 
-    char* str = "hello";
+    char* str;
+    str = "hello";
     char* manipulated = manipulateString(str);
     printf("Manipulated string: %s\n", manipulated);
     free(manipulated);
@@ -89,11 +98,6 @@ int main() {
  * Description: singly linked list node structure
  * for Holberton project
  */
-typedef struct list_s
-{
-    char *str;
-    struct list_s *next;
-} list_t;
 
 /**
  * struct info_s - structure to hold command information
