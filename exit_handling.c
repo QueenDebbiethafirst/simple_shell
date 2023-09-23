@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include "list.h"
 /* Function to concatenate two strings */
 char* concatenate_string(const char* str1, const char* str2) 
 {
