@@ -1,5 +1,6 @@
 #include "header.h"
 #include <stdio.h> 
+#include "list.h"
 
 /**
 * check_command - Checks whether a file is an executable command.
