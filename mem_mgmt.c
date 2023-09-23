@@ -1,4 +1,5 @@
 #include "header.h"
+#include "list.h"
 
 /**
  * free_buffer - Releases memory and sets the pointer to NULL.
