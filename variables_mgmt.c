@@ -1,12 +1,7 @@
 #include "header.h"
 #include <stdio.h>
 #include <stdlib.h>
-
-// Define your list_t struct and other necessary data structures here.
-typedef struct list_t {
-    char *str;
-    struct list_t *next;
-} list_t;
+#include "list.h"
 
 /* Function prototypes */
 void display_list_items_str(list_t *list);
