@@ -1,4 +1,4 @@
- #ifndef HEADER_H
+#ifndef HEADER_H
 #define HEADER_H
 
 #include <stdio.h>
@@ -175,7 +175,6 @@ typedef struct info_t {
     char *searchstr;
     char findchars;
     struct info_t
-    char *buf;
     int *lengthaddr;
     size_t bufsize;
     char **bufptr;
@@ -219,13 +218,11 @@ typedef struct info_t {
     char *searchstr;
     char *substr;
     char *combobuf;
-    const char *appsrc;
-    char *destinationString;
+    
+    
     const char *sourceString;
     char *inputString;
-
-typedef struct list_t list_t;
-
+typedef struct list_t
 typedef struct info_t {
     char *arg;
     char **argv;
