@@ -1,6 +1,6 @@
 #include "header.h"
 #include <stdio.h>
-
+#include "list.h"
 /**
  * calculate_string_length - Calculates and returns the length of a string.
  *
