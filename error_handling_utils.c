@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include "list.h"
+#include "info.h"
 
 
 #define MAX_STRING_LENGTH 100
@@ -94,7 +95,7 @@ int print_debug(int printnum, int fd)
     int (*__putchar)(char) = _putchar;
     int i, count = 0;
     unsigned int _abs_, current;
-
+int (*__putchar)(char) = print_char;
     if (fd == STDERR_FILENO) 
         int (*__putchar)(char);
     __putchar = print_char;
@@ -142,14 +143,13 @@ char *parse_number(long int convnum, int convbase, int flags)
     char sign = 0;
     char *charptr;
     unsigned long n = convnum;
-
     if (!(flags & CONVERT_UNSIGNED) && convnum < 0)
     {
         n = -convnum;
         sign = '-';
     }
-
-    char *array = flags & CONVERT_LOWERCASE ? "0123456789abcdef" : "0123456789ABCDEF";
+char *array;
+array = flags & CONVERT_LOWERCASE ? "0123456789abcdef" : "0123456789ABCDEF";
     charptr = &buffer[49];
     *charptr = '\0';
 
