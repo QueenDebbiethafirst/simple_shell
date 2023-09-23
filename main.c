@@ -20,8 +20,7 @@ int main(int argc, char **argv)
         file_descriptor = open_file(argv[1]);
         if (file_descriptor == -1)
         {
-          void handle_file_error
-            =handle_file_error(argv[0], argv[1]);
+    handle_file_error(argv[0], argv[1]);
             return (EXIT_FAILURE);
         }
         set_input_stream(info, file_descriptor);
