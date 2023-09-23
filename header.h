@@ -219,9 +219,7 @@ typedef struct info_t {
     char *combobuf;
  const char *sourceString;
 char *inputString;
-struct list_t
-    list_t *alias;
-    
+struct list_t 
 } info_t;
 
 typedef struct {
