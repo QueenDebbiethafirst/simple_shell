@@ -48,7 +48,7 @@ void signal_handler(int signal)
 #include <signal.h>
 
 #define READ_BUFFER_SIZE 1024
-#define CLEAR_BUFFER "\033[H\033[J"
+#define CLEAR_BUFFER '\0'
 
 typedef struct info_s 
 {
