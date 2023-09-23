@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <signal.h>
-
+#include "list.h"
 /* Function prototypes */
 void signal_handler(int signal);
 
