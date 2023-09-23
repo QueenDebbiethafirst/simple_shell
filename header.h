@@ -174,10 +174,9 @@ typedef struct info_t {
     char *dest;
     char *searchstr;
     char findchars;
-    struct info_t *info;
+    struct info_t
     char *buf;
     int *lengthaddr;
-    char *buf;
     size_t bufsize;
     char **bufptr;
     size_t size;
@@ -207,7 +206,6 @@ typedef struct info_t {
     int sp;
     char *cmd;
     void *memptr;
-   ```c
     char fillbyte;
     size_t numbytes;
     char **strarrptr;
