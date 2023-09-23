@@ -1,4 +1,5 @@
 #include "header.h"
+#include "list.h"
 
 /**
  * check_chain_delimiter - Checks if the current character in the buffer serves as a chain delimiter.
