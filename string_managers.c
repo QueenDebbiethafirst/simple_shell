@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include "list.h"
 
 #define WRITE_BUFFER_SIZE 1024
 #define CLEAR_BUFFER '\0'
