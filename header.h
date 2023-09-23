@@ -217,12 +217,9 @@ typedef struct info_t {
     char *str2;
     char *substr;
     char *combobuf;
-    
-
  const char *sourceString;
 char *inputString;
 struct list_t
-    list_t *history;
     list_t *alias;
     
 } info_t;
