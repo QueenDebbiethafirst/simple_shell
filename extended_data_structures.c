@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "list.h"
 #include "header.h"
 
 /* Function to calculate the length of a list */
