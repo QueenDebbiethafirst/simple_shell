@@ -222,18 +222,12 @@ typedef struct info_t {
  const char *sourceString;
 char *inputString;
 struct list_t
- struct info_t
-    char *arg;
-    char **argv;
-    char *delimiter_string;
-    char chr;
     list_t *history;
     list_t *alias;
-    int argc;
-    char *input_string;
+    
 } info_t;
 
-typedef struct liststr {
+typedef struct {
     int num;
     char *str;
     struct liststr *next;
