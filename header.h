@@ -218,10 +218,10 @@ typedef struct info_t {
     char *substr;
     char *combobuf;
     
-    
-    const char *sourceString;
-    char *inputString;
-typedef struct list_t
+
+ const char *sourceString;
+char *inputString;
+struct list_t
  struct info_t
     char *arg;
     char **argv;
@@ -271,9 +271,7 @@ struct list_t {
 
 extern char **environ;
 
-char *copy_string(char *destinationString, const char *sourceString);
-char *copy_string(char *copydest, const char *appsrc, int copynum);
-
+char *copy_string(char *destinationString,char *copydest, const char *appsrc, int copynum);
 #ifndef HEADER_H
 #define HEADER_H
 
