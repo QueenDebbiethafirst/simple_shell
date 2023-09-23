@@ -227,7 +227,7 @@ struct {
     struct liststr *next;
 } liststr_t;
 
-typedef struct passinfo {
+struct passinfo {
     char *arg;
     char **argv;
     char *path;
