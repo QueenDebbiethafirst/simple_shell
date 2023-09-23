@@ -95,7 +95,7 @@ int open_history(info_t *info)
 #include <unistd.h>
 #include <sys/stat.h>
 
-#define HIST_MAX 100
+#define HIST_MAX 4096
 
 typedef struct list_s {
     char *data;
