@@ -175,7 +175,7 @@ typedef struct info_t {
     char *searchstr;
     char findchars;
     struct info_t
-    int *lengthaddr;
+    *lengthaddr;
     size_t bufsize;
     char **bufptr;
     size_t size;
@@ -215,7 +215,6 @@ typedef struct info_t {
     size_t strlen;
     char *str1;
     char *str2;
-    char *searchstr;
     char *substr;
     char *combobuf;
     
@@ -223,7 +222,7 @@ typedef struct info_t {
     const char *sourceString;
     char *inputString;
 typedef struct list_t
-typedef struct info_t {
+ struct info_t
     char *arg;
     char **argv;
     char *delimiter_string;
