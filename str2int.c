@@ -1,5 +1,5 @@
 #include "header.h"
-
+#include "list.h"
 /**
  * command_line - Checks if the shell is in command line mode.
  * @info: Address of the struct containing information.
