@@ -11,7 +11,6 @@ char *nodestr;
     int histnum;
 char *data;
     int whether;
-    struct list_s *next;
 } list_t;
 
 #endif
