@@ -34,7 +34,7 @@ typedef struct info_s
 {
 char **argv;
 } info_t;
-void output_error(info_t *info, char *msg) 
+void output_error(info_t, char *msg) 
 {
 fprintf(stderr, "%s", msg);
 }
@@ -73,9 +73,9 @@ int _strcmp(char *s1, char *s2)
 {
 return (strcmp(s1, s2));
 }
-int exit_program(info_t *info) 
+int exit_program; 
 {
-int exit_code, err_code, execution_status;
+int exit_code(info_t *info)
 if (info->argv[1]) 
 {
 exit_code = str_to_int_with_error_handling(info->argv[1]);
