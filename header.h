@@ -11,6 +11,7 @@
 #include <limits.h>
 #include <fcntl.h>
 #include <errno.h>
+#include "list.h"
 
 /* Global Constants */
 #define WRITE_BUF_SIZE 1024
