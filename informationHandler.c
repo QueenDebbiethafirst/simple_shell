@@ -1,6 +1,7 @@
 #include "header.h"
 #include <stdio.h>
-#include <stdlib.h> 
+#include <stdlib.h>
+#include "list.h"
 
 /**
  * initialize_info_data - Initializes the info_t structure.
