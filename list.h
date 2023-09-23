@@ -1,6 +1,8 @@
 #ifndef LIST_H
 #define LIST_H
 
+#include "list.h"
+
 typedef struct list_t {
     // Define the members of the list structure here
     char *str;
