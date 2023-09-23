@@ -1,6 +1,7 @@
 #include "header.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 #include "list.h"
 
 
@@ -94,8 +95,9 @@ int print_debug(int printnum, int fd)
     int i, count = 0;
     unsigned int _abs_, current;
 
-    if (fd == STDERR_FILENO)
-        __putchar = print_char;
+    if (fd == STDERR_FILENO) 
+        int (*__putchar)(char);
+    __putchar = print_char;
 
     if (printnum < 0)
     {
