@@ -1,6 +1,7 @@
 #include "header.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include "list.h"
 int main(void) 
 {
 char buffer[10];
