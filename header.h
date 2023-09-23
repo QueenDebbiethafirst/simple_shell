@@ -40,7 +40,7 @@ typedef struct liststr {
     int num;
     char *str;
     struct liststr *next;
-} list_t;
+} liststr;
 
 /**
  * struct passinfo - contains pseudo-arguments to pass into a function,
@@ -219,8 +219,6 @@ typedef struct info_t {
     char *combobuf;
  const char *sourceString;
 char *inputString;
-struct list_t 
-} info_t;
 
 typedef struct {
     int num;
@@ -248,13 +246,6 @@ typedef struct passinfo {
     int readfd;
     int histcount;
 } passinfo_t;
-
-struct list_t {
-    int histnum;
-    char *str;
-    char *nodestr;
-    struct list_t *next;
-};
 
 #define INFO_INIT {NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, 0, 0, 0}
 
