@@ -4,6 +4,7 @@
 #include <string.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include "list.h"
 
 /**
  * fetch_history_file - Retrieves the history file.
