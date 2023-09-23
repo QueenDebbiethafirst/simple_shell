@@ -40,13 +40,6 @@ int main()
  * Description: singly linked list node structure
  * for Holberton project
  */
-typedef struct list_s
-{
-    char *nodestr;
-    int histnum;
-    struct list_s *next;
-} list_t;
-
 /**
  * insert_node - Inserts a node at the beginning of the list.
  * @hptr: Address of a pointer to the head node.
