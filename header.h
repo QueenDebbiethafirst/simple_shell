@@ -221,7 +221,7 @@ typedef struct info_t {
  const char *sourceString;
 char *inputString;
 
-typedef struct {
+struct {
     int num;
     char *str;
     struct liststr *next;
